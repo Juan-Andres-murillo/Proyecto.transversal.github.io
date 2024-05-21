@@ -19,62 +19,48 @@ setInterval(() => {
 }, 3000); // Cambiar la imagen cada 3 segundos
 //calculo diferencial
 //Grafica de calculo
-document.addEventListener("DOMContentLoaded", function() {
-    drawCartesianPlane();
-    plotPoints([547, 0], [7800, 0], [0, 66.7], [0, 8], [70, 80]);
-});
+// grafica Datos
+        var energyData = {
+            labels: ['Energía Solar', 'Energía Eólica', 'Energía Hidroeléctrica', 'Energía Biomasa', 'Energía Geotérmica'],
+            datasets: [{
+                label: 'Producción Anual',
+                data: [547, 7800, 66.7, 8, 75], // Estos valores son solo para demostración, reemplázalos con los datos reales
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)'
+                ],
+                borderWidth: 1
+            }]
+        };
 
-function drawCartesianPlane() {
-    var svg = document.getElementById("svg-plane");
-    var width = svg.getAttribute("width");
-    var height = svg.getAttribute("height");
+        // Configuración del gráfico
+        var energyOptions = {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        };
 
-    // Draw x-axis
-    svg.appendChild(createLine(0, height / 2, width, height / 2));
-    // Draw y-axis
-    svg.appendChild(createLine(width / 2, 0, width / 2, height));
-
-    // Add ticks and labels
-    for (var i = -10; i <= 10; i++) {
-        if (i !== 0) {
-            svg.appendChild(createLine(width / 2 + i * 20, height / 2 - 5, width / 2 + i * 20, height / 2 + 5)); // x-axis ticks
-            svg.appendChild(createLine(width / 2 - 5, height / 2 - i * 20, width / 2 + 5, height / 2 - i * 20)); // y-axis ticks
-            svg.appendChild(createText(width / 2 + i * 20 - 5, height / 2 + 20, i * 1000)); // x-axis labels
-            svg.appendChild(createText(width / 2 - 20, height / 2 - i * 20 + 5, -i * 10)); // y-axis labels
-        }
-    }
-}
-
-function createLine(x1, y1, x2, y2) {
-    var line = document.createElementNS("http://www.w3.org/2000/svg", "line");
-    line.setAttribute("x1", x1);
-    line.setAttribute("y1", y1);
-    line.setAttribute("x2", x2);
-    line.setAttribute("y2", y2);
-    line.setAttribute("stroke", "black");
-    return line;
-}
-
-function createText(x, y, text) {
-    var txt = document.createElementNS("http://www.w3.org/2000/svg", "text");
-    txt.setAttribute("x", x);
-    txt.setAttribute("y", y);
-    txt.textContent = text;
-    return txt;
-}
-
-function plotPoints(...points) {
-    var svg = document.getElementById("svg-plane");
-    points.forEach(point => {
-        var circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
-        circle.setAttribute("cx", (point[0] + 10) * 20); // Mapping x-coordinate to SVG coordinate
-        circle.setAttribute("cy", (10 - point[1]) * 20); // Mapping y-coordinate to SVG coordinate
-        circle.setAttribute("r", 3);
-        circle.setAttribute("fill", "red");
-        svg.appendChild(circle);
-    });
-}
-
+        // Crear gráfico
+        var ctx = document.getElementById('energyChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: energyData,
+            options: energyOptions
+        });
 // Obtener los elementos de las asignaturas
 var asignaturaInfo = document.querySelectorAll('.asignatura-info');
 var calculoLink = document.querySelector('.Calculo');
