@@ -1,0 +1,166 @@
+ /* Estilos para el slider */
+ 
+ .slider {
+     width: 100%;
+     overflow: hidden;
+ }
+ 
+ .slider-inner {
+     display: flex;
+     transition: transform 0.5s ease;
+ }
+ 
+ .slide {
+     flex: 0 0 100%;
+     /* Hace que cada slide ocupe el 100% del ancho del contenedor */
+ }
+ /* Estilos para las imágenes */
+ 
+ .slide img {
+     width: 100%;
+     height: auto;
+ }
+ /* Estilos CSS solo para este ejemplo */
+ 
+ body {
+     font-family: Arial, sans-serif;
+     margin: 0;
+     padding: 0;
+ }
+ 
+ .InformacionM {
+     color: #333;
+     padding-left: 50px;
+     word-spacing: 2px;
+     max-width: 1700px;
+     ;
+     margin: 50px;
+     line-height: 15px;
+ }
+ 
+ #logo {
+     margin-top: 1px;
+     display: inline;
+     width: 150px;
+     height: 100px;
+ }
+ 
+ header {
+     position: relative;
+     margin: 5px;
+     font-size: 20px;
+     font-family: 'Courier New', Courier, monospace;
+     background-color: #333;
+     color: #fff;
+     padding: 80px;
+     text-align: center;
+     align-items: center;
+ }
+ 
+ nav {
+     display: flex;
+     justify-content: center;
+     margin-top: 20px;
+ }
+ 
+ nav ul {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+     display: flex;
+ }
+ 
+ nav ul li {
+     margin: 0 10px;
+     position: relative;
+ }
+ 
+ nav ul li a {
+     color: #fff;
+     text-decoration: none;
+     padding: 10px 15px;
+     border-radius: 5px;
+     transition: background-color 0.3s ease;
+ }
+ 
+ nav ul li a:hover {
+     background-color: #555;
+ }
+ /* Estilos para el menú desplegable */
+ 
+ .submenu {
+     display: none;
+     position: absolute;
+     background-color: #333;
+     padding: 10px;
+     border-radius: 5px;
+     top: 100%;
+     left: 0;
+     z-index: 1;
+ }
+ /*ESTILOS GENERALES*/
+ 
+ p {
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     font-size: 17px;
+ }
+ /*Calculo Diferencial*/
+ 
+ #cartesian-plane {
+     position: relative;
+     width: 400px;
+     height: 400px;
+     border: 1px solid black;
+ }
+ 
+ #svg-plane {
+     position: absolute;
+     top: 0;
+     left: 0;
+ }
+ /*Fisica*/
+ 
+ #imagenesFl {
+     margin: 5px;
+     width: 250px;
+     height: 125px;
+ }
+ 
+ #imagenesF {
+     width: 150px;
+     height: 150px;
+ }
+ 
+ #imagenesI {
+     margin: 10px;
+     white-space: 20px;
+     border: 1px;
+     width: 250;
+     height: 150;
+     display: block;
+     height: 200px;
+     width: 200px;
+ }
+ 
+ #fotoi {
+     width: 100px;
+     height: 100px;
+ }
+ 
+ nav ul li:hover .submenu {
+     display: block;
+ }
+ 
+ .submenu li {
+     margin: 5px 0;
+ }
+ 
+ .submenu li a {
+     display: block;
+     color: #fff;
+     text-decoration: none;
+ }
+ 
+ .submenu li a:hover {
+     background-color: #555;
+ }
