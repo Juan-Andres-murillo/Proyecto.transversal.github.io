@@ -1,0 +1,308 @@
+/*Api clima*/
+.clima {
+    margin-top: 0;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+#weather {
+    margin-top: 20px;
+}
+
+/**/
+.container-2 {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+    
+
+#letrasw{
+    color: white;
+    margin: 1px;
+        text-align: center;
+}
+    .project {
+        height: 300px;
+        margin-bottom: 30px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s ease;
+    }
+    .project:hover {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+    
+    .project img {
+        width: 100%;
+        display: block;
+        transition: transform 0.3s ease;
+    }
+    .project:hover img {
+        transform: scale(1.1);
+    }
+    .project-info {
+        padding: 20px;
+    }
+    .project-info h2 {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    .project-info p {
+        margin-bottom: 10px;
+    }
+    .project-info a {
+        display: block;
+        color: #007bff;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    .project-info a:hover {
+        color: #0056b3;
+    }
+/*ddd*/
+.container-1{
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #40a246;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #f1ff2b;
+}
+/*Estilos de tabla de calculo*/
+
+#Graficac {
+    width: 1000px;
+    height: 500px;
+}
+
+
+/* Estilos para el slider */
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    flex: 0 0 100%;
+    /* Hace que cada slide ocupe el 100% del ancho del contenedor */
+}
+
+
+/* Estilos para las imágenes */
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Estilos CSS solo para este ejemplo */
+
+body {
+    background-color: aliceblue;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.InformacionM {
+    color: #333;
+    padding-left: 50px;
+    word-spacing: 2px;
+    max-width: 1700px;
+    ;
+    margin: 50px;
+    line-height: 15px;
+}
+
+#logo {
+    margin-top: 1px;
+    display: inline;
+    width: 150px;
+    height: 100px;
+}
+
+header {
+    position: relative;
+    margin: 0;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #333;
+    color: #fff;
+    padding: 80px;
+    text-align: center;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+
+/* Estilos para el menú desplegable */
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    padding: 9px;
+    border-radius: 5px;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+
+/*ESTILOS GENERALES*/
+
+p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+}
+
+
+/*Calculo Diferencial*/
+
+#cartesian-plane {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+}
+
+#svg-plane {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/*Fisica*/
+
+#imagenesFl {
+    margin: 5px;
+    width: 250px;
+    height: 125px;
+}
+
+#imagenesF {
+    width: 150px;
+    height: 150px;
+}
+
+#imagenesI {
+    margin: 10px;
+    white-space: 20px;
+    border: 1px;
+    width: 250;
+    height: 150;
+    display: block;
+    height: 200px;
+    width: 200px;
+}
+
+#fotoi {
+    width: 100px;
+    height: 100px;
+}
+
+nav ul li:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    margin: 5px 0;
+}
+
+.submenu li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+.submenu li a:hover {
+    background-color: #555;
+}
